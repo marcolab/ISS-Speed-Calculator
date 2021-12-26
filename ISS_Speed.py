@@ -4,8 +4,6 @@ import urllib.request
 import json
 # import time library
 from time import sleep
-# import geopy library -- requires "pip install geopy"
-import geopy.distance
 
 from math import sin, cos, asin, sqrt, pi
 
