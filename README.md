@@ -1,7 +1,11 @@
 # ISS-Speed-Calculator
 
-This script has the aim of estimating the International Space Station speed based on its position. It gets the real-time ISS coordinates from the public API http://api.open-notify.org/iss-now.json. The API is polled every 30 seconds and data regarding ISS position is saved. At each time interval, the current speed is calculated by dividing the covered distance by the elapsed time. The ISS orbits earth with an orbit that can be approximated to a sphere, thus distance is calculated as a spherical distance through the Haversine formula. 
-This operation is repeated for a set number of API polls, after which an average speed is provided as an output.
+This script has the aim of estimating the *International Space Station* speed based on its position. It follows this procedure:
+- Get real-time ISS coordinates from the public API at http://api.open-notify.org/iss-now.json
+- API is polled every 30 seconds and data regarding ISS position is saved
+- At each time interval, the current speed is calculated (and printed to screen) by dividing the covered distance by the elapsed time
+- Distance is calculated as a spherical distance through the Haversine formula (ISS orbit approximated to a sphere)
+- This operation is repeated for a set number (20) of API polls, after which an average speed is provided as an output
 
 ## Libraries
 
